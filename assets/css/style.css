@@ -1,4 +1,8 @@
 /* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -76,48 +80,84 @@ nav a:hover {
     color: white;
     text-align: center;
     padding: 80px 20px;
+    position: relative;
+    /* Agar tombol navigasi bisa diposisikan secara absolut di dalamnya */
+    display: flex;
+    justify-content: center;
+    /* Memusatkan tombol secara horizontal */
+    align-items: center;
+    /* Memusatkan tombol secara vertikal */
 }
 
+/* Styling untuk Judul */
 .hero h1 {
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
+/* Styling untuk Paragraf */
 .hero p {
     font-size: 18px;
     margin-bottom: 20px;
 }
 
+/* Styling untuk Tombol Navigasi */
 .nav-button {
     width: 40px;
     height: 40px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    /* Memusatkan icon di dalam tombol */
+    justify-content: center;
+    /* Memusatkan icon di dalam tombol */
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    /* Memungkinkan tombol untuk diposisikan di atas hero */
     cursor: pointer;
 }
 
+/* Penempatan Tombol Previous */
 .nav-button.prev {
     left: 20px;
 }
 
+/* Penempatan Tombol Next */
 .nav-button.next {
     right: 20px;
 }
 
+/* General Container Styles */
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
 /* Section Styles */
+.section-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* Align items at the top */
+    margin-bottom: 40px;
+}
+
+.content {
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* General Container Styles */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.section {
+.section-profile {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 40px;
 }
 
@@ -133,20 +173,19 @@ nav a:hover {
 h2 {
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 10px;
 }
 
 .divider {
-    width: 50px;
-    height: 4px;
-    background-color: #0e5faa;
-    margin-bottom: 20px;
+    width: 100px;
+    height: 2px;
+    background-color: #f3ea09;
+    margin: 20px 0;
 }
 
 .image-placeholder {
     width: 100%;
     height: 200px;
-    background: #ddd;
+    background-color: #d9d9d9;
 }
 
 .text-content {
@@ -159,11 +198,6 @@ h2 {
 .read-more-btn {
     color: #0e5faa;
     font-weight: 700;
-}
-
-.read-more:hover,
-.read-more-btn:hover {
-    text-decoration: underline;
 }
 
 /* Article Section */
@@ -180,7 +214,7 @@ h2 {
 
 .article-content {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .article-image {
@@ -220,20 +254,35 @@ h2 {
     font-size: 16px;
 }
 
-/* Ekstrakurikuler and Tenaga Pendidik Section */
+/* Section Styling */
+.section {
+    display: flex;
+    flex-direction: column;
+    /* Atur elemen anak dalam kolom */
+    align-items: center;
+    /* Memusatkan elemen anak secara horizontal */
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+
+/* Judul di atas */
 .section-title {
     font-size: 28px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
+/* Kontainer gambar */
 .extracurricular-container,
 .image-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
+    /* Memusatkan gambar secara horizontal */
 }
 
+/* Item gambar */
 .extracurricular-item,
 .image-item {
     width: 287px;
@@ -241,13 +290,14 @@ h2 {
     background: #d9d9d9;
 }
 
+/* Tombol Lihat Selengkapnya */
 .see-more {
     display: block;
     text-align: center;
     font-size: 16px;
     color: #0e5faa;
     font-weight: 700;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .see-more:hover {
