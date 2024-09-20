@@ -11,6 +11,13 @@ body {
   color: #333;
 }
 
+.text-header {
+  font-size: 15px;
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  padding: 10px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
