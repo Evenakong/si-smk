@@ -19,7 +19,6 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
 }
 
@@ -178,8 +177,12 @@ nav a:hover {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 10px;
   font-weight: 700;
+}
+
+.text-header2 {
+  font-size: 20px;
 }
 
 .divider {
@@ -200,6 +203,7 @@ h2 {
 }
 
 .text-content p {
+  padding: 2px;
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
@@ -208,9 +212,11 @@ h2 {
 
 .read-more,
 .read-more-btn {
+  padding: 24px;
   color: #0e5faa;
   font-weight: 700;
   text-decoration: none;
+  border-radius: 10px;
 }
 
 /* Article Section */
@@ -326,10 +332,6 @@ h2 {
   margin-top: 40px;
 }
 
-.see-more:hover {
-  text-decoration: underline;
-}
-
 .sticky-header {
   position: sticky;
   top: 0;
@@ -369,14 +371,17 @@ h2 {
 
 .footer h3 {
   font-size: 18px;
+  text-decoration: none;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
 .footer p,
 .footer a {
-  font-size: 16px;
+  font-size: 15px;
   margin: 5px 0;
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
 }
 
 .footer a {
@@ -384,5 +389,9 @@ h2 {
 }
 
 .footer a:hover {
-  text-decoration: underline;
+  color: #000;
+}
+
+.read-more-btn a:hover {
+  color: #000;
 }
