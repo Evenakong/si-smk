@@ -75,7 +75,7 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-  background: #0e5faa url("https://via.placeholder.com/1200x600") no-repeat center center;
+  background: #0e5faa url("https://www.smksantoaloisius.sch.id/upload/picture/47816139bannerwebsite.jpg") no-repeat center center;
   background-size: cover;
   color: white;
   text-align: center;
@@ -186,6 +186,11 @@ h2 {
   width: 100%;
   height: 200px;
 }
+.image-placeholderi img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* Agar gambar tetap proporsional dan mengisi area persegi */
+}
 
 .text-content p {
   font-size: 16px;
@@ -198,6 +203,7 @@ h2 {
 .read-more-btn {
   color: #0e5faa;
   font-weight: 700;
+  text-decoration: none;
 }
 
 /* Article Section */
@@ -295,6 +301,14 @@ h2 {
   /* background: #d9d9d9; */
 }
 
+.extracurricular-item h1 {
+  font-family: "poppins", sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+  color: #000;
+}
+
 /* Tombol Lihat Selengkapnya */
 .see-more {
   display: block;
@@ -341,4 +355,11 @@ h2 {
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
