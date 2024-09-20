@@ -43,15 +43,15 @@ nav {
 }
 
 .logo img {
-  width: 100px;
-  height: 75px;
+  width: 90px;
+  height: 50px;
 }
 
 .logo span {
   color: white;
   font-size: 18px;
   font-weight: 700;
-  margin-left: 10px;
+  margin-right: 30px;
 }
 
 nav ul {
@@ -323,14 +323,37 @@ h2 {
   text-decoration: underline;
 }
 
-/* Footer Styles */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.image-item {
+  padding-top: 10px;
+}
+
+/* Styling untuk membuat card sejajar ke samping */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Agar card turun ke bawah jika ruang tidak cukup */
+  gap: 16px; /* Jarak antar card */
+  justify-content: space-around; /* Mengatur posisi card agar rata di tengah */
+}
+
+.card {
+  width: 18rem;
+  margin: 10px;
+}
 .footer {
   background-color: #0e5faa;
   color: white;
-  padding: 20px;
+  padding: 30px;
   display: flex;
+  width: 100%;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .footer div {
@@ -355,11 +378,4 @@ h2 {
 
 .footer a:hover {
   text-decoration: underline;
-}
-
-.sticky-header {
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 1000;
 }
